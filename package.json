@@ -8,7 +8,7 @@
 	"author": "Marcel Laverdet <marcel@laverdet.com> (https://github.com/laverdet/)",
 	"main": "fibers",
 	"scripts": {
-		"install": "node build.js || nodejs build.js",
+		"preinstall": "echo Skipping native module rebuild",
 		"test": "node test.js || nodejs test.js"
 	},
 	"repository": {
