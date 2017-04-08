@@ -14,9 +14,9 @@ if (process.env.ELECTRON) {
 }  else {
     var ver = process.version.split('.'); 
     var maj = ver[0].substr(1);
-    if (maj < 4 || maj > 6) {
+    if (maj < 5 || maj > 6) {
         throw new Error('Unsupported node.js version - ' + process.version
-            + '\n Only node.js 4.x - 6.x are currently supported.'); 
+            + '\n Only node.js 5.x - 6.x are currently supported.'); 
     }
     modPath = path.resolve(__dirname, 'bin', process.platform, os.arch(), maj + '.x', 'fibers');
 }
